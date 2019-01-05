@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testing.tone.ADD"
+    android:background="@drawable/blank">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/Liner1">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="38dp"
+            android:text="创建项目"
+            android:id="@+id/textView"
+            android:layout_weight="0.12"
+            android:textIsSelectable="true"
+            android:textSize="20dp"
+            android:editable="false"
+            android:textStyle="bold"
+            android:password="false"
+            android:textColor="#38c3f2"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/done"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/green_btn"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Liner1">
+
+        <EditText
+            android:id="@+id/thing"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:hint="请输入你想坚持的事情"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/encourage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/thing"
+            android:layout_alignStart="@+id/thing"
+            android:layout_alignLeft="@+id/thing"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:hint="写一句话鼓励自己"
+            android:maxLength="40"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/dateChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/encourage"
+            android:layout_alignStart="@+id/encourage"
+            android:layout_alignLeft="@+id/encourage"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/blue_btn"
+            android:text="终止日期"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/dateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/dateChoose"
+            android:layout_alignBottom="@+id/dateChoose"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dateChoose"
+            android:text="请点击按钮"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/encourage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/thing"
+            android:layout_toLeftOf="@+id/thing"
+            android:background="@drawable/ic_assignment_24dp1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/dateChoose"
+            android:layout_alignBottom="@+id/dateChoose"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/dateChoose"
+            android:background="@drawable/ic_date_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/dateChoose"
+            android:layout_alignTop="@+id/encourage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/encourage"
+            android:background="@drawable/ic_good_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击设置提醒时间"
+            android:layout_marginTop="62dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/dateChoose"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/HM" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
